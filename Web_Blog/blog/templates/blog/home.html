@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html</title>
+    <link href="{% static "blog/test.css" %}">
+</head>
+<body>
+<H1>You are in Html page</H1>
+<div class="one">
+<a href="{% url "course" slug="Django" %}"><h2>Django Course</h2></a>
+<a href="{% url "course" slug="Json" %}"><h2>Json course</h2></a>
+<a href="{% url "course" slug="Html" %}"><h2>Html course</h2></a></div>
+
+
+</body>
+</html>
